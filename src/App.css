@@ -1,38 +1,114 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+  font-size: 15px;
+}
+.header{
+  width: 100%;
+  
+  
+}
+.crypto{
+  font-family: 'Raleway',sans-serif;
+  height: 5rem;
+  text-align:center;
+  font-size: 3.7em;
+  font-weight: 600;
+  color: rgb(58, 63, 63);
+  background-color: gold;
+  cursor: pointer;
+}
+
+.home{
+  width: 80%;
+  padding: 2em;
+ margin: 0 auto;
+  
+}
+.home input{
+  padding: .1em;
+  width: 100%;
   text-align: center;
+  font-size: 2em;
+  border-radius: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.coins-list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.coin-box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 300px;
+  padding: 30px;
+  margin:10px;
+  text-align: center;
+  /* background-color: grey; */
+}
+.coin-box img{
+  width:50%;
+}
+.coin-box h3{
+  font-size: 2.4em;
+  font-weight: 600;
+  padding: 5px;
+  color: rgb(9, 19, 16);
+}
+.coin-box p{
+  text-align: left;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: rgb(57, 65, 65);
+  padding: 3px;
+  margin: 2px;
+}
+.coin-box p span{
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(102, 93, 93);
+}
+.coin-box .market-price{
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.coin-data{
+  /* margin-top: 100px; */
+  padding-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.coin-data img{
+  width: 30%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-crypto{
+  width: 60%;
+}
+.box-crypto h2{
+  padding: 20px;
+  font-size: 4em;
+  font-weight: 500;
+}
+.box-crypto p{
+  padding: 20px;
+  font-size: 2em;
+}
+a{
+  text-decoration: none;
+  color: gold;
 }
